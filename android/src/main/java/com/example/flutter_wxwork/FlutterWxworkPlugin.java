@@ -1,8 +1,10 @@
 package com.example.flutter_wxwork;
 
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.text.TextUtils;
 import android.util.Log;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -11,6 +13,12 @@ import com.tencent.wework.api.IWWAPIEventHandler;
 import com.tencent.wework.api.WWAPIFactory;
 import com.tencent.wework.api.model.BaseMessage;
 import com.tencent.wework.api.model.WWAuthMessage;
+import com.tencent.wework.api.model.WWMediaFile;
+import com.tencent.wework.api.model.WWMediaImage;
+import com.tencent.wework.api.model.WWMediaLink;
+import com.tencent.wework.api.model.WWMediaText;
+import com.tencent.wework.api.model.WWMediaVideo;
+import java.nio.charset.StandardCharsets;
 
 import java.util.HashMap;
 import java.util.Map;
